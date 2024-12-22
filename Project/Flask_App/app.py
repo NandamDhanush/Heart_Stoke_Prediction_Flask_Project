@@ -2,10 +2,10 @@ from flask import Flask, request, render_template
 import joblib 
 import numpy as np
 app = Flask(__name__)
-model = joblib.load(Provide the directory path for the "model file" here, Example:- "C(Your_Drive_Name):/Your_Folder_Name(s)/Training/model")
-label1 = joblib.load (Provide the directory path for the "mar_transform file" here, Example:- "C(Your_Drive_Name):/Your_Folder_Name(s)/Training/mar_transform')
-label2 = joblib.load(Provide the directory path for the "res_transform file" here, Example:- "C(Your_Drive_Name):/Your_Folder_Name(s)/Training/res_transform")
-column=joblib.load (Provide the directory path for the "column file" here, Example:- "C(Your_Drive_Name):/Your_Folder_Name(s)/Training/column")
+model = joblib.load("E:\\12c7\Heart_Stoke_Prediction_Flask_Project-master\Project\Training\model")
+label1 = joblib.load ("E:\\12c7\Heart_Stoke_Prediction_Flask_Project-master\Project\Training\mar_transform")
+label2 = joblib.load("E:\\12c7\Heart_Stoke_Prediction_Flask_Project-master\Project\Training\\res_transform")
+column=joblib.load ("E:\\12c7\Heart_Stoke_Prediction_Flask_Project-master\Project\Training\column")
 app = Flask(__name__)
 @app.route('/')
 def predict():
